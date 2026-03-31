@@ -1,0 +1,21 @@
+# Changelog
+
+## 03/30/2026
+
+### Added
+- Add Vendored Libraries for Port
+### Changed
+- 64 Bit conversion
+  - Use [id-software/DOOM/pull/2](https://github.com/id-Software/DOOM/pull/2)
+  - Use [id-software/DOOM/pull/9](https://github.com/id-Software/DOOM/pull/9)
+- Changed Fire to LCTRL instead of RCTRL
+### Removed
+- Remove X11 in Favor of SDL3 Video API
+- Removed Sound Server stuff in Favor of SDL3 Audio API
+  - SDL3_mixer coming soon
+- Remove Some Linux Specific Code
+  - Note: Made on a M3 Max MacBook Pro.
+- Remove Certain `#ifdef NORMALLINUX` and `#ifdef LINUX` checks
+### Issues
+- Due to Input handling being changed some functions are broken
+- All sfx are at full volume.(Haven't figured out how to increase or decrease volume ingame)
