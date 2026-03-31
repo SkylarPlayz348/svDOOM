@@ -68,4 +68,4 @@ set(SOURCES
 add_executable(${PROJECT_NAME} ${SOURCES})
 target_compile_definitions(${PROJECT_NAME} PRIVATE NORMALUNIX)
 target_compile_definitions(${PROJECT_NAME} PRIVATE LINUX)
-target_link_libraries(${PROJECT_NAME} vendor)
+target_link_libraries(${PROJECT_NAME} vendor m)
